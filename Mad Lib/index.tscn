@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnxjglip66yg1"]
+
+[ext_resource type="Script" path="res://mad-lib.gd" id="1_qi6go"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qi6go")
+family_member = "Mom"
+camp_name = "Wannaleave"
+adjective1 = "fun"
+activity1 = "snowboarding"
+activity2 = "golfing"
+plural_noun = "nuns"
+adjective2 = "stinky"
+noun = "mouse"
+nickname = "Sam"

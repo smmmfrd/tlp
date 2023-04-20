@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1xf2ijiqrivx"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_dw1ox"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jl1g4"]
+albedo_color = Color(0.992157, 0.6, 0.654902, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g7hvj"]
+albedo_color = Color(0.866667, 0.0156863, 0.34902, 1)
+
+[node name="Model" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 0, 0, 0)
+mesh = SubResource("SphereMesh_dw1ox")
+surface_material_override/0 = SubResource("StandardMaterial3D_jl1g4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.570213, 0, 0, 0, 0.570213, 0, 0, 0, 0.570213, 0.870318, 0.568258, 0.168122)
+mesh = SubResource("SphereMesh_dw1ox")
+surface_material_override/0 = SubResource("StandardMaterial3D_jl1g4")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.570213, 0, 0, 0, 0.570213, 0, 0, 0, 0.570213, -0.935401, 0.568258, 0.168122)
+mesh = SubResource("SphereMesh_dw1ox")
+surface_material_override/0 = SubResource("StandardMaterial3D_jl1g4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.565392, 0, 0, 0, 1.00241, 0, 0, 0, 0.565392, -0.622134, -1.21213, 0.442936)
+mesh = SubResource("SphereMesh_dw1ox")
+surface_material_override/0 = SubResource("StandardMaterial3D_g7hvj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.565392, 0, 0, 0, 1.00241, 0, 0, 0, 0.565392, 0.560978, -1.21213, 0.442936)
+mesh = SubResource("SphereMesh_dw1ox")
+surface_material_override/0 = SubResource("StandardMaterial3D_g7hvj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, -4.37114e-08, 0.866025, 0.5, 7.57103e-08, 0.5, -0.866025, -1.19209e-07, 0.486977, -1.0584)
+light_energy = 1.271
+shadow_enabled = true
+shadow_opacity = 0.52

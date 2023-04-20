@@ -1,0 +1,100 @@
+[gd_scene load_steps=4 format=3 uid="uid://blacdth551cxv"]
+
+[ext_resource type="Texture2D" uid="uid://ik1w182xav6o" path="res://square.png" id="1_bgtfc"]
+[ext_resource type="Script" path="res://game.gd" id="1_cohuh"]
+[ext_resource type="Script" path="res://square.gd" id="2_7gv0l"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_cohuh")
+
+[node name="Squares" type="CanvasGroup" parent="."]
+
+[node name="0, 0" type="Sprite2D" parent="Squares"]
+position = Vector2(100, 100)
+scale = Vector2(30, 30)
+texture = ExtResource("1_bgtfc")
+script = ExtResource("2_7gv0l")
+
+[node name="1, 0" type="Sprite2D" parent="Squares"]
+position = Vector2(300, 100)
+scale = Vector2(30, 30)
+texture = ExtResource("1_bgtfc")
+script = ExtResource("2_7gv0l")
+x = 1
+
+[node name="2, 0" type="Sprite2D" parent="Squares"]
+position = Vector2(500, 100)
+scale = Vector2(30, 30)
+texture = ExtResource("1_bgtfc")
+script = ExtResource("2_7gv0l")
+x = 2
+
+[node name="0, 1" type="Sprite2D" parent="Squares"]
+position = Vector2(100, 300)
+scale = Vector2(30, 30)
+texture = ExtResource("1_bgtfc")
+script = ExtResource("2_7gv0l")
+y = 1
+
+[node name="1, 1" type="Sprite2D" parent="Squares"]
+position = Vector2(300, 300)
+scale = Vector2(30, 30)
+texture = ExtResource("1_bgtfc")
+script = ExtResource("2_7gv0l")
+x = 1
+y = 1
+
+[node name="2, 1" type="Sprite2D" parent="Squares"]
+position = Vector2(500, 300)
+scale = Vector2(30, 30)
+texture = ExtResource("1_bgtfc")
+script = ExtResource("2_7gv0l")
+x = 2
+y = 1
+
+[node name="0, 2" type="Sprite2D" parent="Squares"]
+position = Vector2(100, 500)
+scale = Vector2(30, 30)
+texture = ExtResource("1_bgtfc")
+script = ExtResource("2_7gv0l")
+y = 2
+
+[node name="1, 2" type="Sprite2D" parent="Squares"]
+position = Vector2(300, 500)
+scale = Vector2(30, 30)
+texture = ExtResource("1_bgtfc")
+script = ExtResource("2_7gv0l")
+x = 1
+y = 2
+
+[node name="2, 2" type="Sprite2D" parent="Squares"]
+position = Vector2(500, 500)
+scale = Vector2(30, 30)
+texture = ExtResource("1_bgtfc")
+script = ExtResource("2_7gv0l")
+x = 2
+y = 2
+
+[node name="Dividers" type="CanvasGroup" parent="."]
+
+[node name="Square" type="Sprite2D" parent="Dividers"]
+position = Vector2(300, 200)
+scale = Vector2(140, 2)
+texture = ExtResource("1_bgtfc")
+
+[node name="Square2" type="Sprite2D" parent="Dividers"]
+position = Vector2(300, 400)
+scale = Vector2(140, 2)
+texture = ExtResource("1_bgtfc")
+
+[node name="Square3" type="Sprite2D" parent="Dividers"]
+position = Vector2(200, 300)
+rotation = 1.5708
+scale = Vector2(140, 2)
+texture = ExtResource("1_bgtfc")
+
+[node name="Square4" type="Sprite2D" parent="Dividers"]
+position = Vector2(400, 300)
+rotation = 1.5708
+scale = Vector2(140, 2)
+texture = ExtResource("1_bgtfc")
